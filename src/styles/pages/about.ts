@@ -66,7 +66,18 @@ export const AboutContainer = styled('main', {
         alignItems: 'center',
         justifyContent: 'flex-end',
         gap: 15,
-    }
+
+        '@bp1':{
+            flexDirection: 'column',
+            gap: 0
+        }
+    },
+
+    '@bp1':{
+        'li + li':{
+            marginTop: 15
+        }
+    },
     
    })
 
@@ -81,7 +92,7 @@ export const AboutContainer = styled('main', {
         justifyContent: 'flex-start',
         paddingInline: '.4rem',
         '@bp1':{
-            width: 300,  
+            width: 335,  
         },
         '&::before': {
             content: '',
