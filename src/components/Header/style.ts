@@ -72,8 +72,8 @@ export const NavContainer = styled('nav', {
         transition: 'all .2s',
 
         '&:hover':{
-            borderBottom: '3px solid $green-700'
-            }
+          borderBottom: '3px solid $green-700'
+        }
     }
     }
 })

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { GithubLogo, TwitterLogo, DiscordLogo, InstagramLogo} from "phosphor-react"
+import { GithubLogo, TwitterLogo, DiscordLogo, InstagramLogo, LinkedinLogo} from "phosphor-react"
 import { SocialMediaContainer } from "./style"
 
 export default function SocialMedia(){
@@ -16,12 +16,22 @@ export default function SocialMedia(){
           <TwitterLogo size={24} />
           </Link>
           </li>
+          <li>
           <Link href="">
           <DiscordLogo size={24} />
           </Link>
+          </li>
+          <li>
           <Link href="">
           <InstagramLogo size={24} />
           </Link>
+        </li>
+         <li>
+          <Link href="">
+          <LinkedinLogo size={24} />
+          </Link>
+         </li>
+
         </ul>
       </SocialMediaContainer>
     )

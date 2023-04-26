@@ -14,13 +14,20 @@ export const SocialMediaContainer = styled('div', {
         position: 'relative',
         left: 15,
 
-        a: {
-            textDecoration: 'none',
-            color: '$white',
+    li: {
+        transition: 'all .2s',
+    '&:hover': {
+        transform: 'scale(1.5)'
+    }
+    },
 
-            '&:hover': {
-                color: '$green-700'
-            }
+    a: {
+    textDecoration: 'none',
+    color: '$white',
+
+    '&:hover': {
+        color: '$green-700',
         }
+    }
     }
 })

@@ -32,8 +32,8 @@ onClick={HandleActiveButtonOfMobile}>
    
     <NavContainer className={isNavBar? 'open' : 'close'}>
         <ul>
-            <li><Link href="">{t("home")}</Link></li>
-            <li><Link href="">{t("about")}</Link></li>
+            <li><Link href="/">{t("home")}</Link></li>
+            <li><Link href="/about">{t("about")}</Link></li>
             <li><Link href="">{t("work")}</Link></li>
             <li><Link href="">{t("contact")}</Link></li>
             <button 

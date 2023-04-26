@@ -67,7 +67,3 @@ export const InfoHome = styled('main', {
 })
 
 
-export const FragmentStyle = styled('p', {
- fontSize: "2rem",
- color: "$gray-800"
-})
