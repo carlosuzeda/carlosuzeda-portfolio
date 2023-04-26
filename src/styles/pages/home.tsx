@@ -17,7 +17,7 @@ export const ContainerHome = styled('main', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    padding: '2rem',
+    paddingInline: '2rem',
     margin: '0 auto',
     height: '81vh',
     gap: 15,
