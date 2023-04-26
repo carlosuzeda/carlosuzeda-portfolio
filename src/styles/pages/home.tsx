@@ -1,20 +1,42 @@
 import { styled } from "..";
+import { keyframes } from '@stitches/react'
+
+const vertMove = keyframes({
+    '0%':
+     { 
+        transform: 'translateY(0)'
+     },
+    '100%':
+     { 
+        transform: 'translateY(-10px)'
+     }
+
+  })
 
 export const ContainerHome = styled('main', {
     display: 'flex',
-    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: '2rem',
     margin: '0 auto',
     height: '81vh',
     gap: 15,
+    img:{
+        animation: `${vertMove} 1s infinite alternate`,
+    },
+    div: {
+        flexDirection: 'column',
+    },
     strong: {
         fontSize: 48,
     },
-    img: {
-        alignSelf: 'flex-start'
-    },
+
     '@bp1':{
+        flexDirection: 'column-reverse',
+
+        img:{
+            width: 250,
+        },
         strong: {
             fontSize: 24,
         },
@@ -24,9 +46,9 @@ export const ContainerHome = styled('main', {
 export const InfoHome = styled('main', {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center',
     fontSize: 48,
-span: {
+
+    span: {
     WebkitBackgroundClip: "text",
     WebkitTextFillColor: "transparent",
     backgroundImage: `linear-gradient(
@@ -42,4 +64,10 @@ span: {
             fontSize: 24,
         },
     }
+})
+
+
+export const FragmentStyle = styled('p', {
+ fontSize: "2rem",
+ color: "$gray-800"
 })

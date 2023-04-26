@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Image from 'next/image'
-import Init from '../assets/init.svg'
-import End from '../assets/end.svg'
+import homeDeveloper from '../assets/home-developer.svg'
 import { Container } from '@/styles/pages/app'
-import { ContainerHome, InfoHome } from '@/styles/pages/home'
+import { ContainerHome, FragmentStyle, InfoHome } from '@/styles/pages/home'
 import { Button } from '@/styles/button'
 import { useTranslation } from 'react-i18next'
 
@@ -24,17 +22,22 @@ export default function Home() {
       <Container>
 
       <ContainerHome>
-      <Image src={Init} alt=''/>
+      <div>
+      <FragmentStyle>{"<>"}</FragmentStyle>
+
       <span>{t("Hi, my name is")}</span>
       <InfoHome>
       <span>{t("Carlos Uzeda.")}</span>
       <strong>{t("I’m Full Stack Developer")}</strong>
       </InfoHome>
       <span>{t("Welcome to my Web Portfolio!")}</span>
-      <Image src={End} alt=''/>
+ 
+      <FragmentStyle>{"</>"}</FragmentStyle>
       <Button color='gray'>{t("Learn more")}</Button>
+      </div>
+      <Image src={homeDeveloper} alt=''/>
       </ContainerHome>
-
+   
       </Container>
     
     </>
