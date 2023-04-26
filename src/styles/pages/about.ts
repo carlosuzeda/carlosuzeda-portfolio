@@ -92,7 +92,7 @@ export const AboutContainer = styled('main', {
         justifyContent: 'flex-start',
         paddingInline: '.4rem',
         '@bp1':{
-            width: 335,  
+            width: 300,  
         },
         '&::before': {
             content: '',

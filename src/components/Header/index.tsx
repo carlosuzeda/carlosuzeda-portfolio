@@ -34,8 +34,8 @@ onClick={HandleActiveButtonOfMobile}>
         <ul>
             <li><Link href="/">{t("home")}</Link></li>
             <li><Link href="/about">{t("about")}</Link></li>
-            <li><Link href="">{t("work")}</Link></li>
-            <li><Link href="">{t("contact")}</Link></li>
+            <li><Link href="/work">{t("work")}</Link></li>
+            <li><Link href="/contact">{t("contact")}</Link></li>
             <button 
             onClick={() => changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}>
             {i18n.language === 'pt' ? 'PT' : 'EN'}
