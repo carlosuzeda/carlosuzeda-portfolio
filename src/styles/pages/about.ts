@@ -19,6 +19,7 @@ export const AboutContainer = styled('main', {
     gap: 30,
     margin: '0 auto',
     paddingInline: '2rem',
+    marginTop: '2rem',
     marginBottom: 125,
 
     '@bp1':{
@@ -51,6 +52,15 @@ export const AboutContainer = styled('main', {
         textDecoration: 'none',
         color: "$green-700",
     }
+    },
+    '@bp1':{
+        div:{
+            justifyContent: 'center',
+            span:{
+                fontSize: 24,
+                
+            }
+        }
     }
    })
 

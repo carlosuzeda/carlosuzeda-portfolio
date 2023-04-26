@@ -2,9 +2,10 @@ import { styled } from "..";
 
 export const Container = styled('div', {
     display: 'flex',
+    maxWidth: 1180,
+    margin: '0 auto',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    padding: '0 2rem',
     // justifyContent: 'center',
     // minHeight: '100vh',
 
