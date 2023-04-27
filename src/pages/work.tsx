@@ -46,7 +46,7 @@ export default function Work({ jobs }: WorkProps) {
             nextEl: ".swiper-button-next",
           }}
           breakpoints={{
-            350: {
+            320: {
               slidesPerView: 1,
               spaceBetween: 10,
             },
