@@ -64,7 +64,7 @@ export default function Work({ jobs }: WorkProps) {
           {jobs.map((work) => {
             console.log(work.image)
             return (
-              <SwiperSlide>
+              <SwiperSlide key={work.id}>
                 <WorkItems>
                   <Image src={work.image || WorkImage} width={188} height={188} alt="" />
                   <footer>
