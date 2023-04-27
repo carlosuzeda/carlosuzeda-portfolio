@@ -39,14 +39,14 @@ export default function Work({ jobs }: WorkProps) {
       <WorkContainer>
         <Swiper
           modules={[Navigation, Pagination]}
-          slidesPerView={4}
+          slidesPerView={3}
           onSlideChange={() => console.log("slide change")}
           navigation={{
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }}
           breakpoints={{
-            380: {
+            360: {
               slidesPerView: 1,
               spaceBetween: 10,
             },
