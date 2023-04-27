@@ -4,8 +4,11 @@ import Link from "next/link";
 import { Container } from "@/styles/pages/app";
 import { AboutColumn, AboutContainer, SkillsColumn, Status } from "@/styles/pages/about";
 import { FragmentStyle } from "@/styles/pages/app";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation()
+
   return (
     <Container>
         <AboutContainer>
@@ -33,24 +36,19 @@ export default function About() {
 
       <AboutColumn>
         <div>
-        <FragmentStyle>{"<>"}</FragmentStyle><span>About Me</span><FragmentStyle>{"</>"}</FragmentStyle>
+        <FragmentStyle>{"<>"}</FragmentStyle><span>{t("About Me")}</span><FragmentStyle>{"</>"}</FragmentStyle>
         </div>
         <p>
-          I’m a Full Stack Developer located in Brazil. I have important skills
-          such as critical thinking, sense of urgency, focus on results, good
-          teamwork, proactivity, good dynamics and professional flexibility.
+          {t("I’m a Full Stack Developer located in Brazil. I have important skills such as critical thinking, sense of urgency, focus on results, good teamwork, proactivity, good dynamics and professional flexibility.")}
         </p>
         <p>
-          My focus is on creating engaging, accessible & performant interfaces
-          for humans.
+          {t("My focus is on creating engaging, accessible & performant interfaces for humans.")}
         </p>
         <p>
-          In recent months I have been studying NextJs and TypeScript. I am
-          completely dedicated to development studies, I even do some personal
-          projects to put into practice everything I have been learning.
+          {t("In recent months I have been studying NextJs and TypeScript. I am completely dedicated to development studies, I even do some personal projects to put into practice everything I have been learning.")}
         </p>
         <p>
-          Visit my <Link href="">LinkedIn</Link> profile for more details
+          {t("Visit my")} <Link href="https://www.linkedin.com/in/carlos-uzeda/" target="_blank">LinkedIn</Link> {t("profile for more details")}
         </p>
         </AboutColumn>
       </AboutContainer>

@@ -2,7 +2,6 @@ import { styled } from "..";
 
 export const WorkContainer = styled('div', {
     display: 'flex',
-    gap: '3rem',
     width: '100%',
     maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
     marginLeft: 'auto',
@@ -22,10 +21,27 @@ export const WorkContainer = styled('div', {
     backgroundColor: '$gray-800',
     height: 372,
     width: 305,
+    img: {
+      // objectFit: 'cover',
+      borderRadius: '100%'
+    },
+    footer:{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 15,
+      alignItems: 'center',
+      textAlign: 'center',
 
-    '@bp1': {
-        padding: '2rem',
-      },
+      a:{
+        textDecoration: 'none',
+        color: '$white'
+      }
+    },
+
+    '@bp1':{
+      width: '90%',
+      margin: '0 auto'
+    }
   })
 
   export const WorkHeader = styled('div', {
@@ -35,6 +51,7 @@ export const WorkContainer = styled('div', {
         maxWidth: 1180,
         margin: '0 auto',
         marginBottom: 30,
+        marginTop: 30,
         span: {
             fontSize: 48,
             WebkitBackgroundClip: "text",

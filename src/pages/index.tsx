@@ -6,6 +6,7 @@ import { ContainerHome, InfoHome } from '@/styles/pages/home'
 import {FragmentStyle} from '@/styles/pages/app'
 import { Button } from '@/styles/button'
 import { useTranslation } from 'react-i18next'
+import Link from 'next/link'
 
 
 
@@ -34,7 +35,7 @@ export default function Home() {
       <span>{t("Welcome to my Web Portfolio!")}</span>
  
       <FragmentStyle>{"</>"}</FragmentStyle>
-      <Button color='gray'>{t("Learn more")}</Button>
+      <Button color='gray'><Link href={"/about"}>{t("Learn more")}</Link></Button>
       </div>
       <Image src={homeDeveloper} alt=''/>
       </ContainerHome>

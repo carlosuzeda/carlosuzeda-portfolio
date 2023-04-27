@@ -5,7 +5,7 @@ export const SocialMediaContainer = styled('div', {
     top: '50%',
     left: 15,
     transform: 'translate(-50%, -50%)',
-
+    zIndex: 9,
     ul: {
         display: 'flex',
         flexDirection: 'column',

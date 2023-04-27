@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^4.13.0",
     "@stitches/react": "^1.2.8",
     "@types/node": "18.16.0",
     "@types/react": "18.2.0",
@@ -25,5 +26,8 @@
     "react-i18next": "^12.2.0",
     "swiper": "^9.2.4",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "prisma": "^4.13.0"
   }
 }
